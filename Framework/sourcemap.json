@@ -1,0 +1,112 @@
+{
+  "name": "NewGame",
+  "className": "DataModel",
+  "filePaths": [
+    "default.project.json"
+  ],
+  "children": [
+    {
+      "name": "ReplicatedStorage",
+      "className": "ReplicatedStorage",
+      "children": [
+        {
+          "name": "Packages",
+          "className": "Folder",
+          "children": [
+            {
+              "name": "Void",
+              "className": "ModuleScript",
+              "filePaths": [
+                "Packages/Void/init.luau"
+              ],
+              "children": [
+                {
+                  "name": "VoidServer",
+                  "className": "ModuleScript",
+                  "filePaths": [
+                    "Packages/Void/VoidServer.luau"
+                  ]
+                },
+                {
+                  "name": "VoidClient",
+                  "className": "ModuleScript",
+                  "filePaths": [
+                    "Packages/Void/VoidClient.luau"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Networking",
+              "className": "ModuleScript",
+              "filePaths": [
+                "Packages/Networking/init.luau"
+              ],
+              "children": [
+                {
+                  "name": "client",
+                  "className": "ModuleScript",
+                  "filePaths": [
+                    "Packages/Networking/client.luau"
+                  ]
+                },
+                {
+                  "name": "server",
+                  "className": "ModuleScript",
+                  "filePaths": [
+                    "Packages/Networking/server.luau"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Controllers",
+          "className": "Folder",
+          "children": [
+            {
+              "name": "TestController",
+              "className": "ModuleScript",
+              "filePaths": [
+                "src/Controllers/TestController.luau"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ServerScriptService",
+      "className": "ServerScriptService",
+      "children": [
+        {
+          "name": "Server",
+          "className": "Script",
+          "filePaths": [
+            "src/server/init.server.luau"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "StarterPlayer",
+      "className": "StarterPlayer",
+      "children": [
+        {
+          "name": "StarterPlayerScripts",
+          "className": "StarterPlayerScripts",
+          "children": [
+            {
+              "name": "Client",
+              "className": "LocalScript",
+              "filePaths": [
+                "src/client/init.client.luau"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
